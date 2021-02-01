@@ -33,7 +33,7 @@ namespace WaitingFox.Udon.TeleportMinimap
             {
                 if (players[i].displayName == selectPlayerText.text)
                 {
-                    Networking.LocalPlayer.TeleportTo(players[i].GetPosition(), players[i].GetRotation());
+                    Networking.LocalPlayer.TeleportTo(players[i].GetPosition() + Vector3.back * 2, players[i].GetRotation());
                 }
             }
         }

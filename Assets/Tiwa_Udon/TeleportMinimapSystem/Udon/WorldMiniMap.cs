@@ -316,7 +316,7 @@ namespace WaitingFox.Udon.TeleportMinimap
             {
                 if (TeleportDialogText.text == players[i].displayName)
                 {
-                    Networking.LocalPlayer.TeleportTo(players[i].GetPosition(), players[i].GetRotation());
+                    Networking.LocalPlayer.TeleportTo(players[i].GetPosition() + Vector3.back * 2, players[i].GetRotation());
                     return;
                 }
             }
