@@ -53,6 +53,9 @@ namespace WaitingFox.Udon.TeleportMinimap
         [SerializeField] private GameObject TeleportDialog;
         [SerializeField] private Text TeleportDialogText;
         
+        [SerializeField] private GameObject targetIconPlayer;
+        [SerializeField] private GameObject targetIconLandmark;
+        
         [Header("User Settings")]
         [SerializeField] private Transform[] LandmarkPoint;
         [SerializeField] private float zoomMaxRange;
@@ -62,7 +65,7 @@ namespace WaitingFox.Udon.TeleportMinimap
         [SerializeField] private bool useUserMapImage;
         [SerializeField] private float userMapSize;
         [SerializeField] private Vector2 userMapOffset;
-        
+
         void Start()
         {
             // UI Cam Initialize
@@ -73,6 +76,8 @@ namespace WaitingFox.Udon.TeleportMinimap
             PlayerTrackerRoot.gameObject.SetActive(false);
             LandmarkTrackerRoot.gameObject.SetActive(false);
             TeleportDialog.SetActive(false);
+            targetIconLandmark.SetActive(false);
+            targetIconPlayer.SetActive(false);
             OnClickChangeAutoMode();
             
             // MapView Initalize
@@ -283,6 +288,8 @@ namespace WaitingFox.Udon.TeleportMinimap
 
                 playerIconButton[i].interactable = true;
                 ShowTeleportDialog(playerName[i].text);
+                targetIconPlayer.SetActive(true);
+                targetIconLandmark.SetActive(false);
             }
         }
 
@@ -294,6 +301,8 @@ namespace WaitingFox.Udon.TeleportMinimap
 
                 landmarkIconButton[i].interactable = true;
                 ShowTeleportDialog(LandmarkName[i].text);
+                targetIconPlayer.SetActive(false);
+                targetIconLandmark.SetActive(true);
             }
         }
 
