@@ -8,6 +8,10 @@ VRChatのUdonで作られたミニマップ＆テレポートギミックです
 * VRCSDK3-WORLD-2021.01.19.07.28_Public 以降
 * UdonSharp_v0.19.2 以降
 
+### ダウンロード
+
+[こちら](https://github.com/tiwa0510/UdonTeleportMiniMapSystem/releases/)からunitypackageをダウンロードできます
+
 ### 導入方法・使い方
 
 こちらのドキュメントを参照してください
