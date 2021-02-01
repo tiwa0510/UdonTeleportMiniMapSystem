@@ -41,4 +41,4 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ### Special Thanks
-* CallMenu Author : ほけさん [@hoke946](https://twitter.com/hoke946)
+* **CallMenu** Author : ほけ [@hoke946](https://twitter.com/hoke946)
