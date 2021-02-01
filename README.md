@@ -14,7 +14,7 @@ VRChatのUdonで作られたミニマップ＆テレポートギミックです
 
 ### 導入方法・使い方
 
-こちらのドキュメントを参照してください
+[こちら](https://docs.google.com/document/d/1Nj8ReIrr976d19ZgFS6XcNRos9hG7UTba6smzeY0AFc/edit?usp=sharing)のドキュメントを参照してください
 
 ### License
 
